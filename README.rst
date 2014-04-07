@@ -15,5 +15,5 @@ https://www.stat.si/obcinevstevilkah/Default.aspx?leto=2013
       });
     });
 
-    var obcine_json = JSON.stringify(rows)
+    var obcine_json = JSON.stringify(rows, null, 4)
     obcine_csv = rows.map(function(r) { return r.join(','); }).join("\n");
